@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_a4bccc6dbd6640ecb0abb5a5a5b7b058 }}/sellerapi:${{ github.sha }}
+        tags: index.docker.io/karads007/sellerapi:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
